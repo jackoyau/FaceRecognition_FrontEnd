@@ -47,15 +47,15 @@ class Register extends React.Component{
     render(){
         // const { onRouteChange } = this.props;
         return(
-            <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-                <main className="pa4 black-80">
+            <article className="br3 ba b--white-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center">
+                <main className="pa4 white-80">
                     <div className="measure">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f2 fw6 ph0 mh0">Register</legend>
+                            <legend className="f2 fw6 ph0 mh0">Join AI Detection</legend>
                             <div className="mt3">
                                 <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
                                 <input 
-                                    className="pa2 input-reset ba b--black bg-transparent hover-bg-black hover-white w-100" 
+                                    className="pa2 input-reset ba b--white bg-transparent hover-bg-white hover-white" 
                                     type="text"
                                     name="name"  
                                     id="name"
@@ -65,7 +65,7 @@ class Register extends React.Component{
                             <div className="mt3">
                                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                                 <input 
-                                    className="pa2 input-reset ba b--black bg-transparent hover-bg-black hover-white w-100" 
+                                    className="pa2 input-reset ba b--white bg-transparent hover-bg-white hover-white" 
                                     type="email" 
                                     name="email-address"  
                                     id="email-address"
@@ -75,7 +75,7 @@ class Register extends React.Component{
                             <div className="mv3">
                                 <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                                 <input 
-                                    className="b pa2 input-reset ba b--black bg-transparent hover-bg-black hover-white w-100" 
+                                    className="b pa2 input-reset ba b--white bg-transparent hover-bg-white hover-white" 
                                     type="password" 
                                     name="password"  
                                     id="password"
@@ -91,7 +91,7 @@ class Register extends React.Component{
                                 //Now, you want to define the function and not to call it.
                                 // *** Define in Rendering, Call when clicked !
                                 //So you should use arrow function to assign it to the onClick event
-                                className="b ph3 pv2 input-reset ba b--black br2 bg-transparent grow pointer f6 dib" 
+                                className="b ph3 pv2 input-reset ba b--white br2 bg-transparent grow pointer f6 dib white" 
                                 type="submit"
                                 value="Register"
                             />

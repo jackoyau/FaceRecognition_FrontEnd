@@ -22,10 +22,22 @@ const particlesOptions = {
       value: 150,
       density:{
         enable: true,
-        value_area: 800
+        value_area: 1500
       }
+    },
+    size: {
+      value: 10,
+      random: true
+    },
+    move: {
+      direction: "bottom",
+      outMode: "out"
+    },
+    links: {
+      enable: true
     }
   }
+  
 }
 
 const initialState = {

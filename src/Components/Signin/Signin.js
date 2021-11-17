@@ -42,15 +42,15 @@ class Signin extends React.Component{
     render(){
         const { onRouteChange } = this.props;
         return(
-            <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-                <main className="pa4 black-80">
+            <article className="br3 ba b--white-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center">
+                <main className="pa4 white-80">
                     <div className="measure">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f2 fw6 ph0 mh0">Sign In</legend>
+                            <legend className="f2 fw6 ph0 mh0">AI Face Detection</legend>
                             <div className="mt3">
                                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                                 <input 
-                                    className="pa2 input-reset ba b--black bg-transparent hover-bg-black hover-white " 
+                                    className="pa2 input-reset ba b--white bg-transparent hover-bg-black hover-black " 
                                     type="email" 
                                     name="email-address"  
                                     id="email-address"
@@ -60,7 +60,7 @@ class Signin extends React.Component{
                             <div className="mv3">
                                 <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                                 <input 
-                                    className="b pa2 input-reset ba b--black bg-transparent hover-bg-black hover-white" 
+                                    className="b pa2 input-reset ba b--white bg-transparent hover-bg-black hover-white" 
                                     type="password" 
                                     name="password"  
                                     id="password"
@@ -76,13 +76,13 @@ class Signin extends React.Component{
                                 //Now, you want to define the function and not to call it.
                                 // *** Define in Rendering, Call when clicked !
                                 //So you should use arrow function to assign it to the onClick event
-                                className="b ph3 pv2 input-reset ba b--black br2 bg-transparent pointer f5.5 dib grow" 
+                                className="b ph3 pv2 input-reset ba b--white br2 bg-transparent pointer f5.5 dib grow white" 
                                 type="submit"
                                 value="Sign in"
                             />
                         </div>
                         <div className="lh-copy mt3">
-                            <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer underline">Register</p>
+                            <p onClick={() => onRouteChange('register')} className="f6 link dim white db pointer underline">Register</p>
                         </div>
                         {this.state.signInFail  ?
                         <p className="dark-red f6 mb0">Incorrect Email or Password </p>
